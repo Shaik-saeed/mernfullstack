@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 1px solid black; /* Add this line for a single four-sided border */
+            background-color: rgb(223, 223, 223); /* Add this line for a gray background */
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        a {
+            text-decoration: underline; /* Add underlines to link text */
+            color: blue; /* Change this color as needed */
+        }
+        /* Add styling for the "Send email" link */
+        td:last-child a {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="5">Click any of the following links:</td>
+        </tr>
+        <tr>
+            <td><a href="#" target="_blank">Opens in New</a> | </td>
+            <td><a href="#">Opens in Self</a> | </td>
+            <td><a href="#" target="_parent">Opens in Parent</a> | </td>
+            <td><a href="#" target="_top">Opens in Body</a> | </td>
+            <td><a href="mailto:example@example.com">Send email</a></td>
+        </tr>
+    </table>
+</body>
+</html>
